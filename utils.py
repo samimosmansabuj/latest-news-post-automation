@@ -8,17 +8,10 @@ from io import BytesIO
 from slugify import slugify
 load_dotenv()
 
-# username = os.getenv('USERNAME')
-# app_password = os.getenv('APP_PASSWORD')
-
-
-
 async def translate_text(text):
     async with Translator() as translator:
         result = await translator.translate(text)
         return result.text
-
-
 
 def get_category(category_name):
     try:
