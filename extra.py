@@ -31,3 +31,11 @@
 
 # start___()
 
+
+# # news = urlopen(news_details_url)
+# print(f"Found Latest News: {news_details_url}!")
+# print("Starting news scraping...")
+# news = urlopen(news_details_url)
+# news_html = news.read().decode("utf-8")
+# news_page_content = BeautifulSoup(news_html, 'html.parser')
+# print("News Scrapping Successfully!")
