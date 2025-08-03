@@ -6,6 +6,7 @@ __pycache__/
 # Environment variables
 .env
 venv/
+env/
 
 # others
 soupy.py

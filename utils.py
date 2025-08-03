@@ -8,6 +8,7 @@ from io import BytesIO
 from slugify import slugify
 load_dotenv()
 
+
 async def translate_text(text):
     async with Translator() as translator:
         result = await translator.translate(text)
@@ -38,7 +39,7 @@ def get_category(category_name):
 def uploadMediaFile(image_path, title):
     username = os.getenv('CLIENT_USERNAME')
     app_password = os.getenv('CLIENT_APP_PASSWORD')
-
+    
     image_response = requests.get(image_path)
     if image_response.status_code != 200:
         print("Failed to download image from URL")
@@ -63,5 +64,9 @@ def uploadMediaFile(image_path, title):
     else:
         print("Failed to upload image")
         print(response.status_code, response.text)
+
+
+
+    
 
 
